@@ -16,3 +16,24 @@ int main(void){
 	printf("Program is over!\n");
 	return 0;
 }
+//#include<stdio.h>
+//#include<math.h>
+//int main(void){
+//	int m,i;
+//	int flag=1;
+//	printf("Please enter a number:");
+//	scanf("%d",&m);
+//	if(m<=1){
+//		flag=0;
+//		m=(int)fabs(m);
+//	}
+//	for(i=2;i<=m-1;i++){
+//		if(m%i==0){
+//			flag=0;
+//			printf("%d\n",i);
+//		}
+//	}
+//	if(flag)
+//		printf("It is a prime number.No divisor!\n");
+//	return 0;
+//}
