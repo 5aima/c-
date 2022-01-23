@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+#define CONST 1.42e8
+int main(void){
+	//累加 
+//	int n;
+//	double term;
+//	double sum=0;
+//	for(n=1;n<=64;n++){
+//		term=pow(2,n-1);
+//		sum+=term;
+//	}
+//	printf("sum=%e\n",sum);
+//	printf("volume=%e\n",sum/CONST);
+	double sum=0,term,sign=1;
+	int count=0,n=1;
+	do{
+		term =sign/n;
+		sum= sum+ term;
+		count++;
+		sign=-sign;
+		n=n+ 2;
+	}while(fabs(term)>=1e-4);
+	printf("pi=%f\ncount=%d\n",sum*4,count);
+	return 0;
+}
